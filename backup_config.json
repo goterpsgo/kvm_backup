@@ -1,0 +1,33 @@
+{
+    "istest": 1,
+    "savepath": "/mnt/backup",
+    "savedevice": "/dev/sdc1",
+    "savedevicefs": "ext3",
+    "snappercentage": 15,
+    "compresswith": "gzip",
+    "virtmachines": [
+        {
+            "name": "fileserver",
+            "volgroup": "volgroup",
+            "isincluded": 1,
+            "voltype": "lv"
+        },
+        {
+            "name": "vmdev",
+            "volgroup": "volgroup",
+            "isincluded": 1,
+            "voltype": "lv"
+        },
+        {
+            "name": "appserver",
+            "volgroup": "volgroup",
+            "isincluded": 0,
+            "voltype": "fs",
+            "vols": [
+            	{
+			"name": "appserver_dev_main"
+            	}
+            ]
+        }
+    ]
+}

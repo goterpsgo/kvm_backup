@@ -1,0 +1,13 @@
+This is a personal, academic exercise that happens to also have a practical purpose.  I've started writing an OO Perl-based package that will scan and backup any LVM-managed disk volumes that are used by KVM-based virtual machines.
+
+The goals of this project are:
+
+ - Provide future reference material
+ - Demonstrate use of OO concepts
+ - Demonstrate use of Moose and related libraries
+ - Demonstrate use of threads and thread controls
+ - Create a semi-automatic backup tool using a JSON-formatted configuration file
+
+This software is INCOMPLETE and is an ACTIVE WORK IN PROGRESS.  Anyone is welcome to look at it and use it for their own purposes.
+
+ - Joe
